@@ -1,73 +1,84 @@
 "use client";
 
-import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { useFadeIn } from "./useFadeIn";
 
 export default function Hero() {
+  const ref = useFadeIn();
+
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden bg-gradient-to-br from-white via-sky/10 to-primary/10">
-      {/* Geometric building silhouettes — more visible now */}
-      <div className="absolute top-0 right-0 w-72 h-72 md:w-[520px] md:h-[520px] opacity-[0.08]">
-        <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="120" y="80" width="100" height="320" fill="#1E5A99" />
-          <rect x="240" y="160" width="100" height="240" fill="#4A9BD9" />
-          <rect x="360" y="40" width="100" height="360" fill="#F5A623" />
-        </svg>
-      </div>
-      <div className="absolute bottom-0 left-0 w-56 h-56 md:w-96 md:h-96 opacity-[0.06]">
-        <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="100" width="80" height="200" fill="#1E5A99" />
-          <rect x="120" y="60" width="80" height="240" fill="#4A9BD9" />
-          <rect x="220" y="140" width="80" height="160" fill="#7BC4E8" />
+    <section className="relative min-h-[100svh] flex items-center px-6 pt-24 pb-20 overflow-hidden bg-gradient-to-br from-white via-sky/[0.07] to-primary/[0.08]">
+      {/* Geometric building silhouette — right */}
+      <div className="absolute -top-10 -right-10 md:right-0 w-[26rem] h-[26rem] md:w-[40rem] md:h-[40rem] opacity-[0.07]">
+        <svg
+          viewBox="0 0 480 480"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect x="80" y="120" width="100" height="280" fill="#1E5A99" />
+          <rect x="200" y="60" width="100" height="340" fill="#4A9BD9" />
+          <rect x="320" y="20" width="100" height="380" fill="#F5A623" />
         </svg>
       </div>
 
-      {/* Decorative colour blobs */}
-      <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full bg-sky/20 blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full bg-primary/15 blur-3xl" />
+      {/* Soft colour blobs */}
+      <div className="absolute top-1/3 -left-32 w-72 h-72 rounded-full bg-sky/15 blur-3xl" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
 
-      <div className="relative z-10 max-w-3xl mx-auto text-center">
-        <div className="mb-10 flex justify-center">
-          <Image
-            src="/logo.jpeg"
-            alt="Veritable Technology Solutions"
-            width={200}
-            height={200}
-            className="w-40 md:w-52 mix-blend-multiply"
-            priority
-          />
+      <div
+        ref={ref}
+        className="relative z-10 max-w-5xl mx-auto w-full fade-in-section"
+      >
+        <div className="flex items-center gap-3 mb-8">
+          <span className="w-2 h-2 bg-accent rotate-45" />
+          <p className="text-primary font-semibold text-xs md:text-sm tracking-[0.25em] uppercase">
+            Fractional CTO · IT Infrastructure as a Service
+          </p>
         </div>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight tracking-tight">
-          Technology that frees
-          <br />
-          <span className="text-primary">humans to be human</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-[1.05] tracking-tight max-w-4xl">
+          Senior tech leadership and managed infrastructure,{" "}
+          <span className="text-primary">in one vehicle.</span>
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-navy/70 font-light leading-relaxed max-w-2xl mx-auto">
-          We&apos;re an AI-native technology company built to eliminate grunt work
-          — so you can focus on compassion, creativity, and intelligence.
+        <p className="mt-8 text-lg md:text-xl text-navy/65 font-light leading-relaxed max-w-2xl">
+          Veritable is the streamlined, AI-native engine room behind
+          purpose-driven organisations ready to scale. Strategy, architecture,
+          and operations — built once, run as a service, steered by you.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 flex flex-col sm:flex-row items-start gap-4">
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-3.5 bg-accent text-white font-semibold rounded-lg shadow-lg shadow-accent/30 hover:shadow-accent/50 hover:bg-accent-warm hover:scale-[1.02] transition-all duration-200"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-white font-semibold rounded-lg shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:bg-accent-warm transition-all duration-200"
           >
-            Work With Us
+            Start a conversation
+            <ArrowRight className="w-4 h-4" strokeWidth={2} />
           </a>
           <a
-            href="#what-we-do"
-            className="inline-flex items-center px-8 py-3.5 text-primary font-medium border border-primary/20 rounded-lg hover:bg-primary/5 hover:border-primary/40 transition-all duration-200"
+            href="#case-study"
+            className="inline-flex items-center gap-2 px-7 py-3.5 text-primary font-medium border border-primary/25 rounded-lg hover:bg-primary/5 hover:border-primary/50 transition-all duration-200"
           >
-            See What We&apos;re Building
+            See what we built for Acacia
           </a>
         </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-primary/40" />
+        {/* Anchor client mini-credit */}
+        <div className="mt-16 flex items-center gap-4 text-sm text-navy/50 font-light">
+          <span className="h-px w-10 bg-navy/15" />
+          <span>
+            Anchor client:{" "}
+            <a
+              href="https://acaciacollective.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium hover:text-primary-light transition-colors"
+            >
+              Acacia Collective
+            </a>{" "}
+            — Australia&apos;s only member-owned strata management solution.
+          </span>
+        </div>
       </div>
     </section>
   );

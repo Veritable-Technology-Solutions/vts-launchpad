@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,16 +11,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Veritable Technology Solutions — AI-Native Technology for Purpose-Driven Organisations",
+  title:
+    "Veritable Technology Solutions — Fractional CTO + IT Infrastructure as a Service",
   description:
-    "Veritable Technology Solutions is an AI-native technology company built to eliminate grunt work — so you can focus on compassion, creativity, and intelligence. Adelaide, South Australia.",
+    "Senior tech leadership and managed infrastructure for purpose-driven organisations. The streamlined, AI-native engine room behind ventures ready to scale. Adelaide, South Australia.",
   keywords: [
-    "AI technology",
-    "strata management",
+    "Fractional CTO",
+    "IT Infrastructure as a Service",
+    "AI-native technology",
+    "managed services",
+    "strata technology",
     "Adelaide",
     "South Australia",
-    "technology solutions",
-    "ethical AI",
   ],
 };
 
@@ -30,7 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-AU" className={poppins.variable}>
-      <body className="font-poppins text-navy antialiased">{children}</body>
+      <body className="font-poppins text-navy antialiased">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
