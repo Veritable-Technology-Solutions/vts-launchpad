@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
-import Approach from "@/components/Approach";
-import WhatWeDo from "@/components/WhatWeDo";
+import Services from "@/components/Services";
+import HowItWorks from "@/components/HowItWorks";
+import CaseStudy from "@/components/CaseStudy";
 import WhyVeritable from "@/components/WhyVeritable";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
@@ -10,8 +11,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Approach />
-      <WhatWeDo />
+      <Services />
+      <HowItWorks />
+      <CaseStudy />
       <WhyVeritable />
       <Team />
       <Contact />

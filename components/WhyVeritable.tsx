@@ -1,28 +1,32 @@
 "use client";
 
-import { Zap, Shield, MapPin, HeartHandshake } from "lucide-react";
+import { Briefcase, Sparkles, MapPin, HeartHandshake } from "lucide-react";
 import { useFadeIn } from "./useFadeIn";
 
 const props = [
   {
-    icon: Zap,
-    title: "Fast & Scaling",
-    description: "We move quickly and grow with you",
+    icon: Briefcase,
+    title: "Operating leadership",
+    description:
+      "CEO and GM scar tissue across $8M+ businesses. We've sat in the seat, not just consulted from the side.",
   },
   {
-    icon: Shield,
-    title: "Ethical AI",
-    description: "Thoughtful about data, privacy, and real-world impact",
+    icon: Sparkles,
+    title: "AI-native, not bolted on",
+    description:
+      "Born in the AI era. Every workflow we deliver is designed for a world where AI is part of the stack, not an afterthought.",
   },
   {
     icon: MapPin,
-    title: "Adelaide-Based",
-    description: "Local roots, modern capabilities",
+    title: "Adelaide-based, sovereign",
+    description:
+      "Local roots, Australian-resident infrastructure. No offshoring of judgement or your data.",
   },
   {
     icon: HeartHandshake,
-    title: "Genuine Partnership",
-    description: "We care about your outcomes, not just our invoice",
+    title: "Embedded, not at arm's length",
+    description:
+      "We sit on your side of the table. Your outcome is the only invoice that matters.",
   },
 ];
 
@@ -30,41 +34,39 @@ export default function WhyVeritable() {
   const ref = useFadeIn();
 
   return (
-    <section className="relative py-24 md:py-32 px-6 bg-navy overflow-hidden">
-      {/* Geometric accents */}
-      <div className="absolute top-0 right-0 w-72 h-72 opacity-[0.06]">
-        <svg viewBox="0 0 288 288" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="40" y="40" width="70" height="220" fill="#4A9BD9" />
-          <rect x="130" y="80" width="70" height="180" fill="#7BC4E8" />
-          <rect x="220" y="20" width="70" height="240" fill="#F5A623" />
-        </svg>
-      </div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-primary-light/10 blur-3xl" />
+    <section className="relative py-24 md:py-32 px-6 bg-light overflow-hidden">
+      <div className="absolute top-0 left-1/3 w-96 h-96 rounded-full bg-primary/[0.04] blur-3xl" />
 
       <div ref={ref} className="relative z-10 max-w-5xl mx-auto stagger-children">
-        <div className="text-center mb-16">
-          <p className="text-accent font-semibold text-sm tracking-[0.2em] uppercase mb-3">
-            Why Veritable
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            A partner, not a vendor
+        <div className="max-w-2xl mb-16">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-2 h-2 bg-accent rotate-45" />
+            <p className="text-primary font-semibold text-xs tracking-[0.25em] uppercase">
+              Why Veritable
+            </p>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-navy tracking-tight leading-[1.1]">
+            Senior partner.{" "}
+            <span className="text-primary">On your terms.</span>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10 max-w-3xl mx-auto">
-          {props.map((prop) => (
-            <div key={prop.title} className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                <prop.icon
-                  className="w-6 h-6 text-sky"
+        <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
+          {props.map((p) => (
+            <div key={p.title} className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-lg bg-white border border-primary/15 flex items-center justify-center shrink-0 shadow-sm">
+                <p.icon
+                  className="w-6 h-6 text-primary"
                   strokeWidth={1.5}
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-white text-lg mb-1">
-                  {prop.title}
+                <h3 className="font-bold text-navy text-lg mb-2 tracking-tight">
+                  {p.title}
                 </h3>
-                <p className="text-sky/70 font-light">{prop.description}</p>
+                <p className="text-navy/65 font-light leading-relaxed">
+                  {p.description}
+                </p>
               </div>
             </div>
           ))}
