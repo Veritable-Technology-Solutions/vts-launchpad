@@ -9,16 +9,16 @@ const services = [
     title: "Fractional CTO",
     tagline: "Senior tech leadership, embedded.",
     description:
-      "Architecture decisions. AI roadmap. Vendor and team direction. We take the CTO seat at your leadership table for as long as you need it — and step back the moment you don't.",
+      "Architecture decisions. AI roadmap. Vendor and team direction. We take the CTO seat at your leadership table — fewer days a week than a permanent hire, the same calibre of judgement — and step back the moment you don't need it.",
     accent: "text-primary",
     bg: "bg-primary",
   },
   {
     icon: Server,
     title: "IT Infrastructure as a Service",
-    tagline: "Production-grade systems, fully managed.",
+    tagline: "Ready-made, production-grade, fully managed.",
     description:
-      "Cloud, identity, networking, security, and observability — designed, built, and operated as a service. The whole stack works on day one and stays working.",
+      "Cloud, identity, networking, security, observability, deployment, and backup — deployed from a battle-tested architecture, tailored where your business actually differs. The whole stack works on day one and stays working. No DevOps hire required.",
     accent: "text-primary-light",
     bg: "bg-primary-light",
   },
@@ -60,8 +60,9 @@ export default function Services() {
             <span className="text-primary">One running vehicle.</span>
           </h2>
           <p className="mt-6 text-lg text-navy/60 font-light leading-relaxed">
-            Everything a senior tech function does — without the cost, lead time,
-            or risk of building one yourself.
+            Everything a senior tech function does — strategy, build, and
+            operations — without the cost, lead time, or risk of standing one
+            up yourself.
           </p>
         </div>
 

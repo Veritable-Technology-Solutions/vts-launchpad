@@ -1,0 +1,59 @@
+# Veritable Technology Solutions
+
+> Veritable Technology Solutions is an Adelaide-based technology partner that delivers Fractional CTO and IT Infrastructure as a Service to purpose-driven Australian organisations. The offering packages senior technology leadership, production-grade managed infrastructure, AI-native workflows, and systems integration into one running vehicle — designed, built, and operated as a managed service.
+
+Veritable was founded by Alex Hender. Its anchor client is Acacia Collective, Australia's only member-owned strata management solution.
+
+## What Veritable does
+
+- **Fractional CTO** — Embedded senior technology leadership. Architecture decisions, AI roadmap, vendor and team direction. The CTO seat at your leadership table, for as long as you need it.
+- **IT Infrastructure as a Service (IT-IaaS)** — Production-grade cloud, identity, networking, security, and observability. Designed, built, and operated as a managed service. Ready-made, not built-from-scratch.
+- **AI-Native Workflows** — Custom agents, intelligent automations, and the AI plumbing your team actually uses. Built with AI at the core.
+- **Systems Integration** — Supabase, Stripe, HubSpot, Twilio, and the long tail of SaaS, connected into a coherent operating system for the business.
+
+## Who Veritable serves
+
+Purpose-driven organisations in Australia that need a senior technology function but don't want to stand one up themselves. Typical clients are scaling ventures, member-owned and cooperative structures, mission-led businesses, and operations-heavy services firms where technology is core but a full in-house CTO and IT team is overkill.
+
+## How Veritable works
+
+Four phases: **Scope → Build → Run → Steer.**
+
+1. **Scope** — Map the technology function the business needs to grow into, not the one it can afford to staff today.
+2. **Build** — Stand up the platform, integrations, and AI workflows. Production-grade from day one.
+3. **Run** — Operate everything as a service. Uptime, support, evolution. Clients don't open tickets; they run the business.
+4. **Steer** — The client makes the calls at the strategic level. Veritable translates them into running code, every cycle.
+
+## Anchor client
+
+**Acacia Collective** — Australia's only member-owned strata management solution. Veritable built and operates the platform that makes the member-ownership model commercially viable: member portal, knowledge base, AI assistant, end-to-end strata operations workflows, compliance and communications, identity, billing, and integrations. Built on Next.js, Supabase, Twilio, with AI agents, RLS-secured.
+
+Site: https://acaciacollective.com.au
+
+## Team
+
+**Operating team:**
+- Alex Hender — Executive General Manager
+- Claire Worley — Marketing & Communications Specialist
+- Tabitha McFarlane — Fractional CFO
+
+**Directors (governance):**
+- Paul Daly
+- Jonathan Whalley
+
+## Location and contact
+
+- Based in Adelaide, South Australia
+- Serves clients across Australia
+- Contact: hello@veritabletechnologysolutions.com.au
+- Website: https://veritabletechnologysolutions.com.au
+
+## Key links
+
+- [Homepage](https://veritabletechnologysolutions.com.au)
+- [Services](https://veritabletechnologysolutions.com.au/#services)
+- [How we work](https://veritabletechnologysolutions.com.au/#how-it-works)
+- [Acacia case study](https://veritabletechnologysolutions.com.au/#case-study)
+- [FAQ](https://veritabletechnologysolutions.com.au/#faq)
+- [Team](https://veritabletechnologysolutions.com.au/#team)
+- [Contact](https://veritabletechnologysolutions.com.au/#contact)
