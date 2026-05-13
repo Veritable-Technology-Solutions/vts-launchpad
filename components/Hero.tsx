@@ -37,14 +37,19 @@ export default function Hero() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-[1.05] tracking-tight max-w-4xl">
-          Senior tech leadership and managed infrastructure,{" "}
-          <span className="text-primary">in one vehicle.</span>
+          Your Fractional CTO.{" "}
+          <span className="text-primary">
+            Your ready-made infrastructure.
+          </span>{" "}
+          One vehicle.
         </h1>
 
         <p className="mt-8 text-lg md:text-xl text-navy/65 font-light leading-relaxed max-w-2xl">
-          Veritable is the streamlined, AI-native engine room behind
-          purpose-driven organisations ready to scale. Strategy, architecture,
-          and operations — built once, run as a service, steered by you.
+          Veritable is the senior technology function for purpose-driven
+          Australian organisations ready to scale. CTO-level strategy,
+          production-grade infrastructure, and AI-native workflows —
+          designed, built, and operated as one managed service. You steer.
+          We run the engine room.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-start gap-4">
